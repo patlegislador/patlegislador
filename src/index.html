@@ -3,29 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>patlegislador</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section id="header">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#involvement">Involvement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <section id="home">
+        <div class="name-box">
+            <h1 class="display-1">patrick legislador</h1>
+            <p class="lead">front-end developer</p>
+        </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="container-fluid">
+        <div class="row">
+            <div class="profile-desc col-8">
+                <p>Hi there. </p>
+                <p>It's Patrick, an Information Systems graduate turned front-end developer. My passion is to express
+                    creativity in the form of coding.</p>
+            </div>
+            <div class="profile-img col-4">
+                <img src="resources/avatar.png" alt="patrick">
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
+    <section id="techstack" class="container-fluid">
+        <div class="tech-box">
+            <p class="text-muted display-4">Tech Stack</p>
+            <hr>
+            <div class="row">
+                <i class="col-4 fab fa-html5" style="color: red;" data-toggle="tooltip" data-placement="top"
+                    title="HTML5"></i>
+                <i class="col-4 fab fa-css3-alt" style="color: darkorchid;" data-toggle="tooltip" data-placement="top"
+                    title="CSS3"></i>
+                <i class="col-4 fab fa-sass" style="color: pink" data-toggle="tooltip" data-placement="top"
+                    title="Sass"></i>
+                <i class="col-4 fab fa-bootstrap" style="color: purple" data-toggle="tooltip" data-placement="top"
+                    title="Bootstrap"></i>
+                <i class="col-4 fab fa-js" style="color: #ecd018;" data-toggle="tooltip" data-placement="top"
+                    title="JavaScript"></i>
+                <i class="col-4 fab fa-react" style="color: lightskyblue" data-toggle="tooltip" data-placement="top"
+                    title="ReactJS"></i>
+            </div>
+        </div>
     </section>
 
-    <section id="involvement">
+    <section id="experience" class="container-fluid">
+        <p class="display-4 m-3 text-muted">Experience</p>
+        <hr>
+        <div class="media my-4">
+            <img src="resources/webdev.png" class="mr-3" alt="freelance">
+            <div class="media-body">
+                <h5 class="mt-0 mb-1">Freelance Web Developer</h5>
+                <span>N/A</span>
+                <span class="float-right">December 2019 - Present</span>
+                <p class="text-muted">Working as a front-end designer for small startup companies around the globe by
+                    means of Upwork. </p>
+            </div>
+        </div>
+        <div class="media my-5">
+            <img src="resources/unor.png" class="mr-3" alt="unor">
+            <div class="media-body">
+                <h5 class="mt-0 mb-1">Junior Programmer</h5>
+                <span>University of Negros Occidental - Recoletos</span>
+                <span class="float-right">April 2017 - October 2017</span>
+                <p class="text-muted"> Tasked to assist with senior programmers and designers as well as participate on
+                    activities that promote the University website. Includes collaboration with other departments in
+                    data gathering.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="involvement" class="container-fluid">
+        <p class="display-4 text-muted">Involvement</p>
+        <hr>
+        <div class="media my-5">
+            <img src="resources/chingu.png" class="mr-3" alt="freelance">
+            <div class="media-body">
+                <p class="mt-0 mb-1">Chingu Team Member</p>
+                <a target="_blank" href="https://www.chingu.io">Chingu.io</a>
+                <span class="float-right">August 2019 - Present</span>
+                <p class="text-muted">An alumnus from the 11th Chingu voyage held last July 2019 and still a
+                    participating member in weekly and monthly activities. Chingu is an online collaboration of coders
+                    and designers.</p>
+            </div>
+        </div>
+        <div class="media my-4">
+            <img src="resources/frontendawesome.png" class="mr-3" alt="unor">
+            <div class="media-body">
+                <p class="mt-0 mb-1">Frontend Awesome Member</p>
+                <a target="_blank" href="https://www.meetup.com/Gainesville-Front-End-Dev-Meetup/">Frontend Awesome</a>
+                <span class="float-right">April 2017 - October 2017</span>
+                <p class="text-muted">A member of a local group of web developers in Gainesville. Meetings and
+                    discussions are done monthly as well as collaboration of small projects.</p>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
+
+    </section>
+
+
+    <section id="contact">
+
     </section>
 </body>
 
@@ -38,5 +146,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </html>

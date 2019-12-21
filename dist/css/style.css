@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+i {
+    font-size: 125px;
+    margin-top: 40px;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
+
+span {
+    font-style: italic;
+}
+
+.nav {
+    background: #fff;
+    color: #0f0f0f;
+}
+
+.nav-link {
+    color: #0f0f0f;
+    margin: 0px 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.nav-link:hover {
+    border-color: black;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+
+/****** HOME SECTION ******/
+#home {
+    background: #fff;
+    color: #0f0f0f;
+    height: 95vh;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+    clip-path: polygon(-20% 0, 120% 0, 50% 100%, 50% 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.name-box {
+    margin-top: -200px;
+    text-align: center;
+}
+
+/****** ABOUT SECTION ******/
+#about {
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.profile-desc {
+    font-size: 40px;
+    font-weight: 1;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.profile-img img {
+    width: 400px;
+}
+
+/****** TECHSTACK SECTION ******/
+
+#techstack {
+    background: #fff;
+    color: #0f0f0f;
+    height: 100vh;
+    display: flex;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%, 50% 0);
+    clip-path: polygon(50% 0%, -40% 100%, 140% 100%, 50% 0);
+    justify-content: center;
+}
+
+.tech-box {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+
+/****** EXPERIENCE SECTION ******/
+#experience {
+    background: #fff;
+    color: #0f0f0f;
+    height: 100vh;
+    padding: 150px;
+}
+
+#experience img {
+    border-radius: 30%;
+    width: 80px;
+    height: 80px;
+}
+
+#experience > * {
+    margin: 0 auto;
+}
+
+
+/****** INVOLVEMENT SECTION ******/
+#involvement {
+    background: #fff;
+    color: #0f0f0f;
+    height: 100vh;
+    padding: 150px;
+}
+
+#involvement img {
+    border-radius: 30%;
+    width: 80px;
+    height: 80px;
+}
