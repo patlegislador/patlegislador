@@ -128,3 +128,39 @@ span {
     width: 80px;
     height: 80px;
 }
+
+
+/****** PROJECT SECTION ******/
+#projects {
+    background: #fff;
+    color: #0f0f0f;
+}
+
+.projects-title {
+    padding: 0 150px;
+}
+
+#projects img {
+    height: 300px;
+}
+
+.project-box {
+    box-shadow: 0 3px 6px #e6e6e6;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    margin: 15px;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+    border: none;
+    box-shadow: none;
+}
+
+.pbox-body {
+    margin: 25px 0;
+}
+
+.pbox-text {
+    margin: 20px 0;
+}
