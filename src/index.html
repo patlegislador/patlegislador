@@ -34,9 +34,13 @@
     </ul>
 
     <section id="home">
-        <div class="name-box">
-            <h1 class="display-1">patrick legislador</h1>
-            <p class="lead">front-end developer</p>
+        <div class="name-title">
+            <h1 class="ml7">
+                <span class="text-wrapper">
+                    <span class="letters">patrick legislador</span>
+                </span>
+            </h1>
+            <p class="name-subtitle lead">front-end developer</p>
         </div>
     </section>
 
@@ -131,9 +135,9 @@
             <p class="display-4 text-muted">Projects</p>
             <hr>
         </div>
-        <div class="row justify-content-center">
-            <div class="project-box col-3">
-                <img src="resources/comicsapp.png" class="card-img-top" alt="...">
+        <div class="project-container row justify-content-center">
+            <div class="project-box col-8 col-lg-4">
+                <img src="resources/comicsapp.png" alt="Comics Database">
                 <div class="pbox-body">
                     <h5>Comics Database</h5>
                     <p class="pbox-text">A small side project for comic fans to quickly search for any superhero or
@@ -143,8 +147,8 @@
                 </div>
             </div>
 
-            <div class="project-box col-3">
-                <img src="resources/codetalks.png" class="card-img-top" alt="...">
+            <div class="project-box col-8 col-lg-4">
+                <img src="resources/codetalks.png" alt="Codetalks Podcast">
                 <div class=" pbox-body">
                     <h5>Codetalks Podcast</h5>
                     <p class="pbox-text">A landing page for a talk show, created during the 11th Chingu voyage as an
@@ -154,8 +158,8 @@
                 </div>
             </div>
 
-            <div class="project-box col-3">
-                <img src="resources/avatar2.png" class="card-img-top" alt="...">
+            <div class="project-box col-8 col-lg-4">
+                <img src="resources/avatar2.png" alt="Personal Website">
                 <div class="pbox-body">
                     <h5>Personal Website</h5>
                     <p class="pbox-text">A simple portfolio website designed for both personal and professional reasons.
@@ -169,8 +173,17 @@
     </section>
 
 
-    <section id="contact">
-
+    <section id="contact" class="container-fluid">
+        <p class="display-4">Contact</p>
+        <hr>
+        <div class="row">
+            <a class="col-8 col-md-4" target="_blank" href="https://www.facebook.com/3kdono"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a class="col-8 col-md-4" target="_blank" href="https://github.com/patlegislador"><i
+                    class="fab fa-github-square"></i></a>
+            <a class="col-8 col-md-4" target="_blank" href="https://www.linkedin.com/in/patlegislador/"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
     </section>
 </body>
 
@@ -183,10 +196,28 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="js/index.js"></script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml7 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: false })
+        .add({
+            targets: '.ml7 .letter',
+            translateY: ["1.1em", 0],
+            translateX: ["0.55em", 0],
+            translateZ: 0,
+            rotateZ: [180, 0],
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: (el, i) => 100 * i
+        });
 </script>
 
 </html>

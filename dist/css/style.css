@@ -14,7 +14,8 @@ i {
 }
 
 i:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+
 }
 
 span {
@@ -51,9 +52,13 @@ span {
     align-items: center;
 }
 
-.name-box {
+.name-title {
     margin-top: -200px;
     text-align: center;
+}
+
+.name-subtitle {
+    font-size: 40px;
 }
 
 /****** ABOUT SECTION ******/
@@ -140,16 +145,21 @@ span {
     padding: 0 150px;
 }
 
-#projects img {
-    height: 300px;
-}
-
 .project-box {
     box-shadow: 0 3px 6px #e6e6e6;
     border: 1px solid #d9d9d9;
     padding: 20px;
-    margin: 15px;
+    margin: 15px 15px 50px 15px;
+    display: flex;
+    flex-direction: column;
 }
+
+.project-box img {
+    width: 300px;
+    height: 250px;
+    align-self: center;
+}
+
 
 .project-box:hover {
     transform: scale(1.02);
@@ -164,3 +174,43 @@ span {
 .pbox-text {
     margin: 20px 0;
 }
+
+/****** CONTACT SECTION ******/
+
+#contact {
+    color: #fff;
+    padding: 50px 200px;
+    justify-content: end;
+    text-align: center;
+}
+
+#contact a {
+    margin: 0 auto;
+    color: #fff;
+}
+
+#contact hr {
+    background:#fff;
+}
+
+
+
+/****** ANIMATE TEXT ******/
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+  }
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
